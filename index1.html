@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Button</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style1.css">
+
+<body>
+  <div class="container">
+    <div class="icon">
+      <i class="search fa fa-search"></i>
+    </div>
+    <div class="input">
+      <input type="text" placeholder="Search" id="search">
+      <i class="clear fa fa-times"></i>
+    </div>
+  </div>
+  <script>
+    let search = document.querySelector(".search");
+    let clear = document.querySelector(".clear");
+    search.onclick = function () {
+      document.querySelector(".container").classList.toggle('active');
+    }
+    clear.onclick = function () {
+      document.getElementById("search").value = "";
+    }
+  </script>
+</body>
+
+</html>
